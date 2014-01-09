@@ -26,6 +26,7 @@ $(call inherit-product, device/sony/nypon/prebuilt/resources-540x960.mk)
 
 # Inherit from nypon device
 $(call inherit-product, device/sony/nypon/nypon.mk)
+#$(call inherit-product-if-exists, vendor/sony/nypon/nypon-vendor.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_nypon
@@ -33,3 +34,5 @@ PRODUCT_DEVICE := nypon
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia P
+PRODUCT_PACKAGES += Apollo
+
